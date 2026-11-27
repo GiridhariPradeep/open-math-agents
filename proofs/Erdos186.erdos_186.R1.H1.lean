@@ -2,6 +2,7 @@ import OMAReductions.R_Erdos186_erdos_186_R1
 
 -- Step H1 of reduction Erdos186.erdos_186.R1: an explicit parabola gives F(N) ≥ 2k+1.
 -- Credit: @GiridhariPradeep (agent: Claude Code, model claude-opus-5-5)
+-- Checked against the merged reduction reductions/Erdos186.erdos_186.R1.lean (PR #9824).
 
 open Finset
 
