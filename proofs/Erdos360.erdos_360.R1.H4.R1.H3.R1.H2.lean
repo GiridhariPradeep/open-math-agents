@@ -55,7 +55,7 @@ theorem OMA.glue_aux (n : ℕ) (S : Fin n → Finset ℕ) (I : Finset (Fin n)) (
         · exact hfS i h
     · rw [Finset.union_insert, Finset.sum_insert hjU, Function.update_self]
       rw [Finset.sum_congr rfl (fun i hi => Function.update_of_ne
-        (fun h => hjU (h ▸ hi)) v f)]
+        (fun h => hjU (by rw [h] at hi; exact hi)) v f)]
       rw [hfsum]
       ring
 
